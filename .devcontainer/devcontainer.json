@@ -1,17 +1,7 @@
 {
-  "name": "Your Dev Container",
+  "name": "Weather Application DevContainer",
   "dockerComposeFile": "../docker-compose.yml",
-  "service": "your-service-name", // This should be one of the service names from your docker-compose.yml
+  "service": "blazor_app", // or any service you want to use as the main workspace
   "workspaceFolder": "/workspace",
-  "shutdownAction": "stopCompose",
-  "extensions": [
-    "ms-azuretools.vscode-docker"
-  ],
-  "forwardPorts": [3000], // Add ports you want to forward
-  "settings": {
-    "terminal.integrated.shell.linux": "/bin/bash"
-  },
-  "remoteEnv": {
-    "ENV_VAR": "value" // Optional: Add any environment variables for the container
-  }
+  "shutdownAction": "stopCompose"
 }
